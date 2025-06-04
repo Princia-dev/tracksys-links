@@ -1,0 +1,14 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head><meta charset="UTF-8"><title>Image Tracker</title></head>
+    <body>
+        <img src="https://i.ibb.co/PZb0kHmV/4x4b.jpg" alt="Image Tracker" />
+        <script>
+        fetch('https://tonserveur.com/track?email=oguerep%40gmail.com&img=' + encodeURIComponent('https://i.ibb.co/PZb0kHmV/4x4b.jpg'))
+        .catch(e => console.error('Erreur tracking:', e));
+        </script>
+        <p>Merci de votre visite.</p>
+    </body>
+    </html>
+    
